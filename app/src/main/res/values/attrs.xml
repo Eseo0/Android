@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CellLayout specific attributes. These attributes are used to customize
+      a CellLayout view in XML files. -->
+    <declare-styleable name="OutlineTextView" >
+        <!-- The width of a single cell -->
+        <attr name="textStroke" format="boolean"/>
+        <attr name="textStrokeWidth" format="float"/>
+        <attr name="textStrokeColor" format="color"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.projecthelloondo'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.projecthelloondo"
+        minSdk 29
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation files('libs/json-simple-1.1.1.jar')
+    def room_version = "2.5.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    //원형이미지
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    //카카오 로그인
+    implementation "com.kakao.sdk:v2-all:2.13.0" // 전체 모듈 설치, 2.11.0 버전부터 지원
+    implementation "com.kakao.sdk:v2-user:2.13.0"
+    implementation 'androidx.room:room-runtime:2.5.1'// 카카오 로그인
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+    //날씨
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.google.android.gms:play-services-location:21.0.1"
+    //유튜브
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:12.0.0'
+
+
+    implementation 'org.jsoup:jsoup:1.15.4' //jsoup 추가
+    testImplementation 'junit:junit:4.13.2'
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    annotationProcessor 'androidx.room:room-compiler:2.5.1'
+}

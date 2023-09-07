@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEBF0"
+    android:orientation="vertical" >
+
+
+    <com.example.projecthelloondo.OutlineTextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="@font/mrerg"
+        android:text="•Besimple Sosin Youtube•"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:shadowColor="#A4A4A4"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="2.0"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:videoId="CZHVbmZjIKg"
+        app:autoPlay="true"
+        />
+
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:videoId="kYTDRJC_ANE"
+        app:autoPlay="true"
+        />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:videoId="f8tNxfJrEFQ"
+        app:autoPlay="true"
+        />
+
+
+
+</LinearLayout>

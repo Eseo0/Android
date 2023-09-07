@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF8FF"
+    tools:context=".qPage2">
+
+    <com.example.projecthelloondo.OutlineTextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/mrerg"
+        android:shadowColor="#A4A4A4"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="2.0"
+        android:text="닉네임님은 어떤 타입인가요?"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textStroke="true"
+        app:textStrokeColor="#BDBDBD"
+        app:textStrokeWidth="5.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutParent"
+        android:layout_width="400dp"
+        android:layout_height="517dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbtnHot"
+                android:fontFamily="@font/mrerg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="더위를 타는 타입"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#A4A4A4"
+                android:shadowDx="5.0"
+                android:shadowDy="5.0"
+                android:shadowRadius="2.0"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutHot"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgTop_Hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/test" />
+
+                <ImageView
+                    android:id="@+id/imgBottom_Hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/test" />
+
+                <ImageView
+                    android:id="@+id/imgOuter_Hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/test" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/rbtnNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mrerg"
+                android:text="보통 타입"
+                android:shadowColor="#A4A4A4"
+                android:shadowDx="5.0"
+                android:shadowDy="5.0"
+                android:shadowRadius="2.0"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutNormal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgTop_Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/test" />
+
+                <ImageView
+                    android:id="@+id/imgBottom_Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/test" />
+
+                <ImageView
+                    android:id="@+id/imgOuter_Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/test" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/rbtnCold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mrerg"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#A4A4A4"
+                android:shadowDx="5.0"
+                android:shadowDy="5.0"
+                android:shadowRadius="2.0"
+                android:text="추위를 타는 타입"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCold"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgTop_Cold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/test" />
+
+                <ImageView
+                    android:id="@+id/imgBottom_Cold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/test" />
+
+                <ImageView
+                    android:id="@+id/imgOuter_Cold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/test" />
+            </LinearLayout>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnNext"
+        android:layout_width="161dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:shadowColor="#A4A4A4"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="2.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
